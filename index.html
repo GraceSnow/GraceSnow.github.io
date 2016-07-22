@@ -1,58 +1,162 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>My Webpage</title>
-		<link rel="stylesheet" type="text/css" href="myStyles.css">
-		<script src="Javascript1.js"></script>
-	</head>
-	<body>
-		<table>
-			<tr>
-				<th colspan="2">
-					<img id="butterfly1" src="butterfly1.jpg" onclick="changeImage()">
-					<br>
-					<h1>My Webpage</h1>
-				</th>
-			</tr>					
-			<tr><!--top row-->
-				<td>
-					<div id="aboutme">
-					<h2>About Me</h2>
-					<p>Grace is in high school and plans to go to UF. She likes reading and anime. Grace likes pasta and chocolate. Grace is in high school and plans to go to UF. She likes reading and anime. Grace likes pasta and chocolate. Grace is in high school and plans to go to UF. She likes reading and anime. Grace likes pasta and chocolate.</p>
-					</div>
-				</td>
-				<td width="15%">
-					<div class="dropdown">
-						<button class="dropbtn"><h2>My Projects</h2></button>
-						<div class="dropdown-content">
-							<a href="story.py">Text Adventure</a>
-							<a href="ballgame.py">Ball Bounce</a>
-							<a href="butterfly1.jpg">Obomicon</a>
-							<a href="pig_game.png">Pig Game</a>
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<form id="frm1" action="form_action.asp">
-					First name: <input type="text" name="fname"><br>
-					Last name: <input type="text" name="lname"><br>
-					Comment: <input type="text" name="post"><br><br>
-					<input type="button" onclick="myFunction()" value="Submit">
-					</form>
-				</td>
-			</tr>
-			<tr><!--2nd row-->
-				<td colspan="2"><!--Cell2-->
-					<footer>
-					<h3>Contact</h3>
-					<address>Grace Benson<br>
-					Email:<a href="mailto:email@gmail.com">email@gmail.com</a>
-					</address>
-					</footer>
-				</td>
-			</tr>
-		</table>		
-	</body>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Electronic Waste</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+	.carousel-caption {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		min-width: 290px;
+		max-width: 380px;
+		text-align: left;
+		font-size: 13px;
+		color: black;
+		border-top: 1px grey solid;
+		border-bottom: 1px grey solid;
+		background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
+		background: rgba(255, 255, 255, 0.65);
+	}
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default">
+		<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Brand</a>
+			</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+				<li><a href="#">Link</a></li>
+				<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">One more separated link</a></li>
+			</ul>
+			</li>
+			</ul>
+		<form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+		</form>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Link</a></li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Electronic Waste</h1>
+            </div>
+        </div><!-- /row -->
+		<div class="row">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<a href="http://e-stewards.org/learn-more/for-consumers/overview/where-does-your-e-waste-go/"><img src="ELifecycle.jpg" style="width: 700px; height: 500px; margin: 0 auto;"></a>
+				<div class="carousel-caption">
+					<h2>Electronic Lifecycle</h2>
+					<p>"Think of the trash can as the opening of the pipe leading to a local landfill or an incinerator. Either option means that toxic materials from your electronics stand a good chance of polluting our environment, poisoning our water, soil, wildlife, and our neighbors."</p>
+				</div>
+			</div>
+			<div class="item">
+				<a href="http://www.zdnet.com/article/indias-mounting-e-waste-woes/"><img src="IndiaEwaste.jpg" style="width: 760px; height: 500px; margin: 0 auto;"></a>
+				<div class="carousel-caption">
+					<h2>India</h2>
+					<p>"The US and China are the biggest polluters, totalling 32 percent of e-waste in the world compared to India's roughly 5 percent."</p>
+				</div>
+			</div>
+			<div class="item">
+				<a href="http://www.npr.org/2015/01/04/374780916/a-shadow-economy-lurks-in-an-electronics-graveyard"><img src="GhanaEwaste.jpg" style="width: 890px; height: 500px; margin: 0 auto;"></a>
+				<div class="carousel-caption">
+					<h2>Ghana</h2>
+					<p>"Often, in violation of the law, that means a dump in the developing world — like the region of Agbogbloshie in the West African nation Ghana."</p>
+				</div>
+			</div>
+			<div class="item">
+				<a href="http://www.ipsnews.net/2010/05/china-e-waste-processing-poisons-health-environment/"><img src="ChinaEwaste.jpg" style="width: 740px; height: 500px; margin: 0 auto;"></a>
+				<div class="carousel-caption">
+					<h3>China</h3>
+					<p>"Most of what comes into Guiyu is imported from abroad. “There’s no hard data, but it’s probably above 90 to 95 percent (overseas waste)."</p>
+				</div>
+			</div>
+		</div>
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		</div>
+	</div>
+    <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
