@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Webpage</title>
+		<link rel="stylesheet" type="text/css" href="myStyles.css">
+		<script src="Javascript1.js"></script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th colspan="2">
+					<img id="butterfly1" src="butterfly1.jpg" onclick="changeImage()">
+					<br>
+					<h1>My Webpage</h1>
+				</th>
+			</tr>					
+			<tr><!--top row-->
+				<td>
+					<div id="aboutme">
+					<h2>About Me</h2>
+					<p>Grace is in high school and plans to go to UF. She likes reading and anime. Grace likes pasta and chocolate. Grace is in high school and plans to go to UF. She likes reading and anime. Grace likes pasta and chocolate. Grace is in high school and plans to go to UF. She likes reading and anime. Grace likes pasta and chocolate.</p>
+					</div>
+				</td>
+				<td width="15%">
+					<div class="dropdown">
+						<button class="dropbtn"><h2>My Projects</h2></button>
+						<div class="dropdown-content">
+							<a href="story.py">Text Adventure</a>
+							<a href="ballgame.py">Ball Bounce</a>
+							<a href="butterfly1.jpg">Obomicon</a>
+							<a href="pig_game.png">Pig Game</a>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<form id="frm1" action="form_action.asp">
+					First name: <input type="text" name="fname"><br>
+					Last name: <input type="text" name="lname"><br>
+					Comment: <input type="text" name="post"><br><br>
+					<input type="button" onclick="myFunction()" value="Submit">
+					</form>
+				</td>
+			</tr>
+			<tr><!--2nd row-->
+				<td colspan="2"><!--Cell2-->
+					<footer>
+					<h3>Contact</h3>
+					<address>Grace Benson<br>
+					Email:<a href="mailto:email@gmail.com">email@gmail.com</a>
+					</address>
+					</footer>
+				</td>
+			</tr>
+		</table>		
+	</body>
+</html>

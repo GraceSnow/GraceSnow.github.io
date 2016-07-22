@@ -1,0 +1,12 @@
+function changeImage() {
+	var image = document.getElementById("image1");
+	//image.src="image3.jpg";
+	if (image.src.match("image1.jpg")) {
+		image.src = "image3.jpg";
+		image.alt = "image3";
+	}
+	else {
+		image.src = "image1.jpg";
+		image.alt = "image1";
+	}
+}
